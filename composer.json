@@ -3,6 +3,7 @@
     "description": "setup for leeuwenkasteel webapplications",
     "type": "library",
     "license": "MIT",
+	"version" : "1.0.0",
     "autoload": {
         "psr-4": {
             "Leeuwenkasteel\\Setup\\": "src/"
