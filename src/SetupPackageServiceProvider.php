@@ -22,7 +22,7 @@ class SetupPackageServiceProvider extends ServiceProvider{
   private function loadOptionalPackages()
     {
         $packages = [
-            'leeuwenkasteel\\analyticus\\AnalyticusServiceProvider',
+            'leeuwenkasteel\\analytics\\AnalyticsServiceProvider',
             'leeuwenkasteel\\auth\\AuthServiceProvider',
             'leeuwenkasteel\\contact\\ContactServiceProvider',
             'leeuwenkasteel\\domains\\DomainsServiceProvider',
