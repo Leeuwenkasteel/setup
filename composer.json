@@ -60,5 +60,5 @@
         "leeuwenkasteel/templates": "Templates module (composer require leeuwenkasteel/templates)",
 		"leeuwenkasteel/under-construction": "Templates module (composer require leeuwenkasteel/under-construction)",
         "leeuwenkasteel/webshop": "Webshop module (composer require leeuwenkasteel/webshop)"
-    },
+    }
   }
