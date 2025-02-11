@@ -12,7 +12,7 @@ class PackageManager extends Component
 
     public function mount()
     {
-        $this->packages = Config::get('packages.packages', []);
+        $this->packages = Config::get('config-setup.packages', []);
     }
 
     public function install($packageKey)
@@ -48,6 +48,6 @@ class PackageManager extends Component
 
     public function render()
     {
-        return view('setup::package');
+        return view('setup::packages');
     }
 }

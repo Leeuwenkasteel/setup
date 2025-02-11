@@ -3,62 +3,62 @@
     "description": "setup for leeuwenkasteel webapplications",
     "type": "library",
     "license": "MIT",
-	"version" : "1.0.0",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Leeuwenkasteel\\Setup\\": "src/"
         }
     },
     "authors": [
-      {
-        "role": "Developer",
-        "name": "Sanne van Leeuwen",
-        "email": "sanne@leeuwenkasteel.nl",
-        "homepage": "https://www.leeuwenkasteel.nl/"
-      }
+        {
+            "role": "Developer",
+            "name": "Sanne van Leeuwen",
+            "email": "sanne@leeuwenkasteel.nl",
+            "homepage": "https://www.leeuwenkasteel.nl/"
+        }
     ],
     "require": {
-      "php": "^8.1"
+        "php": "^8.1"
     },
-    "minimum-stability": "stable",
+    "minimum-stability":"stable",
     "prefer-stable": true,
     "extra": {
         "laravel": {
-			"providers": [
-				"Leeuwenkasteel\\Setup\\SetupPackageServiceProvider"
-			]
+            "providers": [
+                "Leeuwenkasteel\\Setup\\SetupPackageServiceProvider"
+            ]
         }
     },
-	"repositories": [
+    "repositories": [
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/analytics.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/auth.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/contact.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/domains.git" },
-		{ "type": "vcs", "url": "git@github.com:leeuwenkasteel/error-logger.git" },
+        { "type": "vcs", "url": "git@github.com:leeuwenkasteel/error-logger.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/languages.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/media.git" },
-		{ "type": "vcs", "url": "git@github.com:leeuwenkasteel/menu.git" },
+        { "type": "vcs", "url": "git@github.com:leeuwenkasteel/menu.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/schema.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/seo.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/scholen.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/templates.git" },
-		{ "type": "vcs", "url": "git@github.com:leeuwenkasteel/under-construction.git" },
+        { "type": "vcs", "url": "git@github.com:leeuwenkasteel/under-construction.git" },
         { "type": "vcs", "url": "git@github.com:leeuwenkasteel/webshop.git" }
     ],
     "suggest": {
-        "leeuwenkasteel/analytics": "Analytics module (composer require leeuwenkasteel/analyticus)",
+        "leeuwenkasteel/analytics": "Analytics module (composer require leeuwenkasteel/analytics)",
         "leeuwenkasteel/auth": "Authenticatie module (composer require leeuwenkasteel/auth)",
         "leeuwenkasteel/contact": "Contact module (composer require leeuwenkasteel/contact)",
         "leeuwenkasteel/domains": "Domeinbeheer module (composer require leeuwenkasteel/domains)",
-		"leeuwenkasteel/error-logger": "ErrorLogger module (composer require leeuwenkasteel/error-logger)",
+        "leeuwenkasteel/error-logger": "ErrorLogger module (composer require leeuwenkasteel/error-logger)",
         "leeuwenkasteel/languages": "Meertaligheid module (composer require leeuwenkasteel/languages)",
         "leeuwenkasteel/media": "Mediabeheer module (composer require leeuwenkasteel/media)",
-		"leeuwenkasteel/menu": "Menu module (composer require leeuwenkasteel/menu)",
+        "leeuwenkasteel/menu": "Menu module (composer require leeuwenkasteel/menu)",
         "leeuwenkasteel/schema": "Database schema module (composer require leeuwenkasteel/schema)",
         "leeuwenkasteel/seo": "SEO module (composer require leeuwenkasteel/seo)",
         "leeuwenkasteel/scholen": "Scholenbeheer module (composer require leeuwenkasteel/scholen)",
         "leeuwenkasteel/templates": "Templates module (composer require leeuwenkasteel/templates)",
-		"leeuwenkasteel/under-construction": "Templates module (composer require leeuwenkasteel/under-construction)",
+        "leeuwenkasteel/under-construction": "Under construction module (composer require leeuwenkasteel/under-construction)",
         "leeuwenkasteel/webshop": "Webshop module (composer require leeuwenkasteel/webshop)"
-    }
-  }
+	}
+}
