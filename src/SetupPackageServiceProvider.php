@@ -4,7 +4,10 @@ namespace Leeuwenkasteel\Setup;
 
 use Illuminate\Support\ServiceProvider;
 use Leeuwenkasteel\Setup\Console\Commands\ShowOptionalPackages;
+use Leeuwenkasteel\Setup\Console\Commands\InstallPackages;
 use Leeuwenkasteel\Setup\Livewire\PackageManager;
+use Leeuwenkasteel\Setup\View\Components\LayoutComponent;
+use Illuminate\Support\Facades\Blade;
 use Livewire;
 
 class SetupPackageServiceProvider extends ServiceProvider{
@@ -18,11 +21,13 @@ class SetupPackageServiceProvider extends ServiceProvider{
 		
 		Livewire::component('setup::package', PackageManager::class);
 		$this->mergeConfigFrom(__DIR__.'/../config/setup.php', 'config-setup');
+		Blade::component('setup::layout', LayoutComponent::class);
 	
 	$this->loadOptionalPackages();
 	if ($this->app->runningInConsole()) {
       $this->commands([
-          ShowOptionalPackages::class
+          ShowOptionalPackages::class,
+		  InstallPackages::class
       ]);
     }
   }

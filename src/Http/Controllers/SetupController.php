@@ -8,7 +8,14 @@ use App\Http\Controllers\Controller;
 
 class SetupController extends Controller
 {  
+	
 	public function index(){
 		return view('setup::package');
 	}
+	
+	public function instructions(){
+		return view('setup::instructions');
+	}
+	
+	
 }
