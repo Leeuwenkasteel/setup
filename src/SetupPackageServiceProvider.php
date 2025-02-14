@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Leeuwenkasteel\Setup\Console\Commands\InstallCommand;
 use Leeuwenkasteel\Setup\Livewire\PackageManager;
 use Leeuwenkasteel\Setup\Livewire\CountPackages;
+use Leeuwenkasteel\Setup\Livewire\Pull;
 use Leeuwenkasteel\Setup\View\Components\LayoutComponent;
 use Illuminate\Support\Facades\Blade;
 use Livewire;
@@ -21,6 +22,7 @@ class SetupPackageServiceProvider extends ServiceProvider{
 		
 		Livewire::component('setup::package', PackageManager::class);
 		Livewire::component('setup::count', CountPackages::class);
+		Livewire::component('setup::pull', Pull::class);
 		
 		$this->mergeConfigFrom(__DIR__.'/../config/setup.php', 'config-setup');
 		Blade::component('setup::layout', LayoutComponent::class);
