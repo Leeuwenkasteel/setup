@@ -19,7 +19,7 @@
                             <td>
 								@if (isset($packagesStatus[$package]['status']))
 									@if ($packagesStatus[$package]['status'] === 'pull_needed')
-										<button wire:click="pullPackage('{{ $package }}')" class="btn btn-warning btn-sm">Pull</button>
+										<button wire:click="pullPackage('{{ $package }}')" class="btn btn-warning btn-sm text-white">Update</button>
 									@else
 										<span class="text-muted">Geen actie nodig</span>
 									@endif
