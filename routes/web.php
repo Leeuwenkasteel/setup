@@ -8,7 +8,9 @@ Route::middleware(['web'])->group(function () {
 	
 	Route::middleware(['cauth'])->group(function () {
         Route::prefix('admin')->group(function () {
-            Route::resource('packages', PackagesController::class);
-        });
+			Route::get('git-status/{packageName}', [PackagesController::class, 'getStatus']);
+			Route::get('pull/{packageName}', [PackagesController::class, 'pull']);
+			Route::resource('packages', PackagesController::class);
+		});
     });
 });
