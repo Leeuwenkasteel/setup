@@ -44,15 +44,15 @@ class SetupPackageServiceProvider extends ServiceProvider{
             'leeuwenkasteel\\domains\\DomainsServiceProvider',
             'leeuwenkasteel\\languages\\LanguagesServiceProvider',
             'leeuwenkasteel\\media\\MediaServiceProvider',
-		'leeuwenkasteel\\domains\\ErrorLoggerServiceProvider',
+			'leeuwenkasteel\\domains\\ErrorLoggerServiceProvider',
             'leeuwenkasteel\\languages\\LanguagesServiceProvider',
             'leeuwenkasteel\\media\\MediaServiceProvider',
-		'leeuwenkasteel\\domains\\MenuServiceProvider',
+			'leeuwenkasteel\\domains\\MenuServiceProvider',
             'leeuwenkasteel\\schema\\SchemaServiceProvider',
             'leeuwenkasteel\\seo\\SeoServiceProvider',
             'leeuwenkasteel\\scholen\\ScholenServiceProvider',
             'leeuwenkasteel\\templates\\TemplatesServiceProvider',
-		'leeuwenkasteel\\domains\\UnderConstuctionServiceProvider',
+			'leeuwenkasteel\\domains\\UnderConstuctionServiceProvider',
             'leeuwenkasteel\\webshop\\WebshopServiceProvider'
         ];
 
