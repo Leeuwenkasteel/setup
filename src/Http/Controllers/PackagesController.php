@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Symfony\Component\Process\Process;
 use Config;
+use Leeuwenkasteel\Auth\Facades\CustomAuth as Auth;
+use Artisan;
 
 class PackagesController extends Controller{  
 	public function index(){
@@ -100,4 +102,13 @@ class PackagesController extends Controller{
         // Succesvolle pull
         return redirect()->back()->with('success', "Pull succesvol uitgevoerd voor '$package'.");
     }
+	
+	public function edit($name){
+		if(Auth::user()->roles->first()->slug == 'admin'){
+			Artisan::call('install:'.$name);
+			redirect()->back()->with('success', __('Packages had been updated'));
+		}else{
+			redirect()->back()->with('error', __('Oeps, no access'));
+		}
+	}
 }

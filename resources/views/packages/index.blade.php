@@ -6,6 +6,7 @@
                 <th>{{__('Status')}}</th>
                 <th>{{__('Description')}}</th>
 				<th></th>
+				<th></th>
             </tr>
         </thead>
         <tbody>
@@ -15,6 +16,12 @@
                     <td id="status-{{ $t['name'] }}" class="text-muted">Verwerken...</td>
                     <td>{{ $t['description'] }}</td>
 					<td id="pull-{{ $t['name'] }}">
+					</td>
+					<td>
+					
+						@if(customauth::user()->roles->first()->slug == 'admin')
+							<a href="{{route('packages.edit', $t['name'])}}" class="btn btn-outline-primary btn-sm">Update</a>
+						@endif
 					</td>
                 </tr>
             @endforeach
